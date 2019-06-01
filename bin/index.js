@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const fs = require('fs')
+const fs = require('fs-extra')
 const program = require('commander')
 const download = require('download-git-repo')
 const lodash = require('lodash')
@@ -127,7 +127,12 @@ program.version('1.0.0', '-v, --version')
           },
           {
             title: 'download template',
-            task: () => execa.stdout(`git clone -b 'v2.0' --single-branch --depth 1 `)
+            task: () => execa.stdout('git clone -b \'templates\' --single-branch --depth 1 https://github.com/shitouplus/create-cms-app.git templates')
+              .then(data => {
+                fs.removeSync('.git', { cwd: 'templates' })
+                fs.moveSync('templates', name)
+                return data
+              })
           }
         ]
       )
