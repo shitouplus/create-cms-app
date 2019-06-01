@@ -2,7 +2,6 @@
 
 const fs = require('fs-extra')
 const program = require('commander')
-const download = require('download-git-repo')
 const lodash = require('lodash')
 const inquirer = require('inquirer')
 const chalk = require('chalk')
