@@ -5,7 +5,7 @@ const program = require('commander')
 const inquirer = require('inquirer')
 const Listr = require('listr')
 const UpdaterRenderer = require('listr-update-renderer')
-const { exec, execSync } = require('child_process')
+const { exec } = require('child_process')
 const { promisify } = require('util')
 const execAsync = promisify(exec)
 
@@ -72,11 +72,11 @@ program.version('1.0.0', '-v, --version')
           },
           {
             title: 'download template',
-            task: () => {
-              execSync(`git clone --depth 1 ${answers.repository} templates`, { cwd: name })
-              fs.copySync(`${name}/templates`, `${name}/src`, { filter: src => !src.includes('.git') })
-              fs.removeSync(`${name}/templates`)
-            }
+            task: () => execAsync(`git clone --depth 1 ${answers.repository} templates`, { cwd: name })
+              .then(() => {
+                fs.copySync(`${name}/templates`, `${name}/src`, { filter: src => !src.includes('.git') })
+                fs.removeSync(`${name}/templates`)
+              })
           }
         ],
         {
