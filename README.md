@@ -1,4 +1,4 @@
-# create-react-cms
+# create-react-cms  ![npm](https://img.shields.io/npm/v/create-react-cms.svg) [![GitHub license](https://img.shields.io/github/license/shitouplus/create-react-cms.svg)](https://github.com/shitouplus/create-react-cms/blob/master/LICENSE)  
 > Quickly create cms based on react
 
 ## Install

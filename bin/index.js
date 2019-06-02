@@ -30,7 +30,7 @@ program.version('1.0.0', '-v, --version')
         }
       },
       {
-        type: 'confirm',
+        type: 'input',
         name: 'repository',
         message: 'Please input templates repository?'
       }
