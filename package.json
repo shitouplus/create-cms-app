@@ -1,10 +1,10 @@
 {
-  "name": "mi-cms-cli",
+  "name": "create-react-cms",
   "version": "1.0.0",
-  "description": "",
+  "description": "Quickly create cms app based on react",
   "main": "index.js",
   "bin": {
-    "mi-cms-cli": "bin/index.js"
+    "create-react-cms": "bin/index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -22,7 +22,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "eslint": "^5.16.0",
     "eslint-config-standard": "^12.0.0",
@@ -33,9 +33,7 @@
     "husky": "^2.3.0"
   },
   "dependencies": {
-    "chalk": "^2.4.2",
     "commander": "^2.20.0",
-    "execa": "^1.0.0",
     "fs-extra": "^8.0.1",
     "inquirer": "^6.3.1",
     "listr": "^0.14.3",
