@@ -1,7 +1,7 @@
 {
   "name": "create-react-cms",
   "version": "1.0.0",
-  "description": "Quickly create cms app based on react",
+  "description": "Quickly create cms based on react",
   "main": "index.js",
   "bin": {
     "create-react-cms": "bin/index.js"

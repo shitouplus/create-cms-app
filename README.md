@@ -1,10 +1,10 @@
 # create-react-cms
-> Quickly create cms app based on react
+> Quickly create cms based on react
 
 ## Install
 
 ```
-$ npm install create-react-cms
+$ npm install create-react-cms -g
 ```
 
 ## Usage
