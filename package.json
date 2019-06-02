@@ -2,6 +2,7 @@
   "name": "create-react-cms",
   "version": "1.0.0",
   "description": "Quickly create cms based on react",
+  "repository": "https://github.com/shitouplus/create-react-cms.git",
   "main": "index.js",
   "bin": {
     "create-react-cms": "bin/index.js"
