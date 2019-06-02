@@ -1,7 +1,6 @@
 {
   "name": "create-react-cms",
-  "version": "1.0.0",
-  "npm": "1.0.0",
+  "version": "1.0.1",
   "description": "Quickly create cms based on react",
   "repository": "https://github.com/shitouplus/create-react-cms.git",
   "issues": "https://github.com/shitouplus/create-react-cms/issues",
@@ -23,8 +22,8 @@
       "git add"
     ]
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["react-cms", "react-app"],
+  "author": "shitouplus",
   "license": "MIT",
   "devDependencies": {
     "eslint": "^5.16.0",
