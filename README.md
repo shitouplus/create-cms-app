@@ -18,4 +18,4 @@ create-react-cms <name>
 > 2. download templates of your repository
 
 ## Example
-![create-react-cms](create-react-cms.jpg)
+![create-react-cms](create-react-cms.png)
